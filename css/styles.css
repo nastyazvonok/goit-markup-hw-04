@@ -439,9 +439,13 @@ img {
 .footer-container {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1158px;
-  /* display: flex; */
+  display: flex;
 }
+
+.footer-social-container {
+  margin-left: 120px;
+}
+
 .footer {
   background-color: var(--primary-text-color);
 }
@@ -472,10 +476,7 @@ img {
   width: 264px;
   margin-top: 16px;
 }
-/* .footer-social-container {
-  width: 208px;
-height: 80px;
-} */
+
 .footer-title {
   font-family: "Roboto";
   font-style: normal;
