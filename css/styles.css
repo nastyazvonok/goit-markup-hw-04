@@ -413,21 +413,19 @@ img {
   align-items: center;
   display: flex;
 }
-/* .cust-link {
-  color: #8e8f99;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-} */
+
 
 .cust-icon {
   width: 100px;
   height: 56px;
-  fill: currentColor;
+
 }
 .cust-link:is (hover ,focus) {
-  border-color: var(--button-hover-focus);
-  color: var(--button-hover-focus);
+  border: var(--button-hover-focus);
+
+}
+.cust-link:is( :hover, :focus) .cust-icon{
+  fill: var(--button-hover-focus)
 }
 
 /***************************** Footer *****************************/
@@ -437,7 +435,7 @@ img {
   display: flex;
 }
 .footer-container {
-  padding-left: 15px;
+  padding-left: 15px;ґ
   padding-right: 15px;
   display: flex;
 }
@@ -495,19 +493,21 @@ img {
 .social-item {
   width: 40px;
   height: 40px;
+  color: #ffffff;
 }
 .social-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  /* color:#ffffff; */
+  background-color: var(--accent-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .social-icon {
-  fill: var(--hero-text);
+  fill: #ffffff;
   align-items: center;
   justify-content: center;
 }
