@@ -400,17 +400,18 @@ img {
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  fill: #8e8f99;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 .cust-icon {
-  width: 100px;
-  height: 56px;
+  width: 104px;
+  max-height: 56px;
+  fill: #8e8f99;
+  object-fit: contain;
 }
-.cust-link:is (hover ,focus) {
-  border: var(--button-hover-focus);
+.cust-link:is(:hover, :focus) {
+  border-color: 1px solid var(--button-hover-focus);
 }
 .cust-link:is(:hover, :focus) .cust-icon {
   fill: var(--button-hover-focus);
