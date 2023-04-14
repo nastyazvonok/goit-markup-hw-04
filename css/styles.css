@@ -1,3 +1,5 @@
+/** @format */
+
 :root {
   --primary-text-color: #2e2f42;
   --hero-text: #ffffff;
@@ -13,13 +15,11 @@ body {
   color: var(--title-text-color);
 }
 button {
-  cursor: pointer;
   border-radius: 4px;
 }
 address {
   font-style: normal;
 }
-
 ul {
   list-style: none;
   margin: 0;
@@ -84,11 +84,9 @@ img {
 .logo .link:hover {
   color: var(--button-hover-focus);
 }
-
 .logo .link {
   margin-right: 76px;
 }
-
 .site-nav .link {
   font-weight: 500;
   font-size: 16px;
@@ -117,14 +115,12 @@ img {
 .cont-nav .link:focus {
   color: var(--button-hover-focus);
 }
-
 .header-cont-list {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-
 .telephone {
   margin-left: 40px;
 }
@@ -132,7 +128,6 @@ img {
   font-style: normal;
   margin-left: auto;
 }
-
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -155,7 +150,12 @@ img {
 /* ************************ Hero *************************/
 .hero-section {
   background-color: var(--primary-text-color);
-
+  background-image: linear-gradient(var(--bg-gradient)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin: auto;
 }
 .hero-container {
   text-align: center;
@@ -164,11 +164,6 @@ img {
   height: 594px;
   padding-top: 186px;
   padding-bottom: 186px;
-  background-image: linear-gradient(var(--bg-gradient)),
-    url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .hero-title {
   font-size: 56px;
@@ -201,7 +196,6 @@ img {
   padding-right: auto;
   border: transparent;
 }
-
 .button-hero:hover {
   background-color: var(--button-hover-focus);
 }
@@ -223,7 +217,6 @@ img {
   color: var(--title-text-color);
   margin-top: 8px;
 }
-
 .advantage-list {
   display: flex;
   gap: 24px;
@@ -281,6 +274,7 @@ img {
   padding-right: 15px;
   width: 1158px;
 }
+
 /************************* Section 4 *************************/
 .section-team {
   background-color: #f4f4fd;
@@ -300,7 +294,6 @@ img {
   background-color: var(--hero-text);
   display: block;
 }
-
 .team-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -347,7 +340,6 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 .team-soc-list {
   display: flex;
   justify-content: center;
@@ -356,6 +348,7 @@ img {
 .team-soc-item {
   width: 40px;
   height: 40px;
+  color: #434455;
 }
 .team-soc-link {
   width: 100%;
@@ -365,6 +358,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #434455;
 }
 .team-soc-icon {
   fill: var(--hero-text);
@@ -377,7 +371,6 @@ img {
 }
 
 /***************************** Customers ****************************/
-
 .section-customers {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -385,7 +378,6 @@ img {
 .container {
   width: 1440px;
 }
-
 .cust-title {
   font-family: "Roboto";
   font-style: normal;
@@ -397,7 +389,6 @@ img {
   text-transform: capitalize;
   color: var(--primary-text-color);
 }
-
 .cust-list {
   display: flex;
   justify-content: center;
@@ -409,24 +400,20 @@ img {
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  color: #8e8f99;
+  fill: #8e8f99;
   justify-content: center;
   align-items: center;
   display: flex;
 }
-
-
 .cust-icon {
   width: 100px;
   height: 56px;
-
 }
 .cust-link:is (hover ,focus) {
   border: var(--button-hover-focus);
-
 }
-.cust-link:is( :hover, :focus) .cust-icon{
-  fill: var(--button-hover-focus)
+.cust-link:is(:hover, :focus) .cust-icon {
+  fill: var(--button-hover-focus);
 }
 
 /***************************** Footer *****************************/
@@ -436,7 +423,7 @@ img {
   display: flex;
 }
 .footer-container {
-  padding-left: 15px;ґ
+  padding-left: 15px;
   padding-right: 15px;
   display: flex;
 }
@@ -475,7 +462,6 @@ img {
   width: 264px;
   margin-top: 16px;
 }
-
 .footer-title {
   font-family: "Roboto";
   font-style: normal;
@@ -490,23 +476,20 @@ img {
   display: flex;
   gap: 16px;
 }
-
 .social-item {
   width: 40px;
   height: 40px;
-  color: #ffffff;
+  color: #f4f4fd;
 }
 .social-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  /* color:#ffffff; */
   background-color: var(--accent-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .social-icon {
   fill: #ffffff;
   align-items: center;
@@ -514,13 +497,12 @@ img {
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--button-hover-focus);
+  background-color: #31d0aa;
 }
 
 /***************************Portfolio  ****************************/
 
 /* button */
-
 .nav-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -536,11 +518,9 @@ img {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
 .nav-button:last-child {
   margin-right: 0;
 }
-
 .nav-button:hover,
 .nav-button:focus {
   background-color: var(--button-hover-focus);
@@ -551,7 +531,6 @@ img {
 }
 
 /* Portfolio */
-
 .works-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -581,14 +560,12 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   display: block;
 }
-
 .navigation-list {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
   gap: 24px;
 }
-
 .container-main {
   margin: 0;
   max-width: 1440px;
